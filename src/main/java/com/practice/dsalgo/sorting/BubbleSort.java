@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.practice.dsalgo;
+package com.practice.dsalgo.sorting;
 
 /**
  * @author shash
