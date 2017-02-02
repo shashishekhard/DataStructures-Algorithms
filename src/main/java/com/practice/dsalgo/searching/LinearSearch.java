@@ -28,6 +28,8 @@ public class LinearSearch {
 		//for(int i=0;i<n;i++){
 		//	arr[i] = scanner.nextInt();
 		//}
+		
+		//int key = scanner.nextInt();
 		// The scanner has to be closed after the values are taken from the user
 		/* scanner.close()*/
 		
