@@ -11,6 +11,7 @@ package com.practice.dsalgo.sorting;
  * The idea here is to iterate the array sequentially several times where each element is compared 
  * with its successor.
  * i.e. x[i] > x[i+1] -> swap(x[i],x[i+1]) 
+ * The efficiency of this algorithm is O(n2).
  */
 public class BubbleSort {
 
