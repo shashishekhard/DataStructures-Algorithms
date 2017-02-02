@@ -4,8 +4,14 @@
 package com.practice.dsalgo.searching;
 
 /**
- * @author shash
- *
+ * @author shashishekhar
+ * 
+ * @description
+ * In search algorithms this is the simplest and easiest algorithm to understand and use. 
+ * But again not a very efficient search algorithm.
+ * The logic is to take a key from the user and then search for the key in the entire array.
+ * The key is compared to each element in the array, if found the index is displayed else it returns -1.
+ * The efficiency of this algorithm is O(n).
  */
 public class LinearSearch {
 
