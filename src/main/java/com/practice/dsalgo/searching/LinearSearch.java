@@ -21,6 +21,16 @@ public class LinearSearch {
 	public static void main(String[] args) {
 		int[] arr = {10,34,23,19,87,56,78,43,99,5};
 		
+		//We can add the scanner and get elements from the user.
+		//Scanner scanner = new Scanner(System.in);
+		//int n = scanner.nextInt();
+				
+		//for(int i=0;i<n;i++){
+		//	arr[i] = scanner.nextInt();
+		//}
+		// The scanner has to be closed after the values are taken from the user
+		/* scanner.close()*/
+		
 		LinearSearch.linearSearch(arr, 19);
 		
 		LinearSearch.linearSearch(arr, 8);
