@@ -33,6 +33,7 @@ public class LinearSearch {
 		// The scanner has to be closed after the values are taken from the user
 		/* scanner.close()*/
 		
+		//LinearSearch.linearSearch(arr, key);
 		LinearSearch.linearSearch(arr, 19);
 		
 		LinearSearch.linearSearch(arr, 8);
