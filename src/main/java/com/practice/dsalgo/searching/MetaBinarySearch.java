@@ -131,7 +131,7 @@ public class MetaBinarySearch {
 		}
 
 		// Calculate the number of bits needed to represent the largest index
-		int numBits = (int) (Math.floor(Math.log(n - 1) / Math.log(2))) + 1;
+		int numBits = Integer.SIZE - Integer.numberOfLeadingZeros(n - 1);
 
 		// Start building the index from the most significant bit
 		int pos = 0;

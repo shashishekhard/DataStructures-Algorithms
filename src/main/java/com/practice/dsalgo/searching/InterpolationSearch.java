@@ -120,6 +120,14 @@ public class InterpolationSearch {
 				return -1;
 			}
 
+			// Handle case where arr[low] == arr[high] (duplicate values)
+			if (arr[low] == arr[high]) {
+				if (arr[low] == key) {
+					return low;
+				}
+				return -1;
+			}
+
 			// Estimate the position using interpolation formula
 			int pos = low + (int)(((long)(key - arr[low]) * (high - low)) / (arr[high] - arr[low]));
 
