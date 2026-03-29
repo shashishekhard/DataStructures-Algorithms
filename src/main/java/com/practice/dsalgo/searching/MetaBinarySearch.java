@@ -125,6 +125,11 @@ public class MetaBinarySearch {
 			return -1;
 		}
 
+		// Handle single element array (log2(0) is undefined)
+		if (n == 1) {
+			return arr[0] == key ? 0 : -1;
+		}
+
 		// Calculate the number of bits needed to represent the largest index
 		int numBits = (int) (Math.floor(Math.log(n - 1) / Math.log(2))) + 1;
 

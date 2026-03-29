@@ -3,8 +3,6 @@
  */
 package com.practice.dsalgo.searching;
 
-import java.util.Arrays;
-
 /**
  * @author shashishekhar
  * 
