@@ -151,6 +151,11 @@ public class MetaBinarySearch {
 			}
 		}
 
+		// Check if the element at final position matches the key
+		if (arr[pos] == key) {
+			return pos;
+		}
+
 		return -1;
 	}
 }
