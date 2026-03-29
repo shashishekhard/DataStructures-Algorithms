@@ -129,7 +129,7 @@ public class InterpolationSearch {
 			}
 
 			// Estimate the position using interpolation formula
-			int pos = low + (int)(((long)(key - arr[low]) * (high - low)) / (arr[high] - arr[low]));
+			int pos = low + (int)((((long)key - arr[low]) * (high - low)) / ((long)arr[high] - arr[low]));
 
 			if (arr[pos] == key) {
 				return pos;
