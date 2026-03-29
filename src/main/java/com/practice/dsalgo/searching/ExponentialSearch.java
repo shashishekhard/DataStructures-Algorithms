@@ -108,6 +108,9 @@ public class ExponentialSearch {
 	 */
 	public static int exponentialSearch(int[] arr, int key) {
 		int n = arr.length;
+		if (n == 0) {
+			return -1;
+		}
 
 		// If element is at first position
 		if (arr[0] == key) {
