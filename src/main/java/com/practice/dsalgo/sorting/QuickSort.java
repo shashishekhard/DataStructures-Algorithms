@@ -18,6 +18,67 @@ import java.util.Scanner;
  *  
  * The efficiency of this algorithm is O(n log n).
  *
+ * ================================================================================================
+ * GRAPHICAL REPRESENTATION - Quick Sort
+ * ================================================================================================
+ *
+ * Array: [8, 3, 1, 7, 0, 10, 2]
+ * Pivot selection: middle element
+ *
+ * Step 1: Full array, pivot = arr[3] = 7
+ *   [8, 3, 1, 7, 0, 10, 2]
+ *    i                   j     pivot=7
+ *
+ *   i scans right for elements >= pivot, j scans left for elements <= pivot
+ *   i stops at 8 (8>=7), j stops at 2 (2<=7) -> swap
+ *   [2, 3, 1, 7, 0, 10, 8]
+ *       i             j
+ *   i stops at 7 (7>=7), j stops at 0 (0<=7) -> swap
+ *   [2, 3, 1, 0, 7, 10, 8]
+ *             i   j
+ *   i moves past j -> partition complete
+ *   Left: [2, 3, 1, 0]   Right: [7, 10, 8]
+ *
+ * Recursion Tree:
+ *
+ *                    [8, 3, 1, 7, 0, 10, 2]
+ *                    pivot=7, partition
+ *                   /                      \
+ *          [2, 3, 1, 0]                [7, 10, 8]
+ *          pivot=3                     pivot=10
+ *         /          \                /         \
+ *     [2, 0]       [3, 1]        [7, 8]        [10]
+ *     pivot=2      pivot=3       pivot=10        done
+ *    /     \      /     \       /     \
+ *  [0]    [2]   [1]    [3]   [7]    [8]
+ *  done   done  done   done  done   done
+ *
+ * Merging results back:
+ *   [0, 1, 2, 3, 7, 8, 10]  SORTED!
+ *
+ * Partitioning Detail (Hoare's scheme):
+ *
+ *   Array:  [ 8 | 3 | 1 | 7 | 0 | 10 | 2 ]
+ *             i ->              <- j
+ *             |                    |
+ *    scan right for >= pivot   scan left for <= pivot
+ *             |                    |
+ *          found 8              found 2
+ *             +--- swap them ---+
+ *
+ * Time Complexity:
+ *   Best Case:    O(n log n) - Balanced partitions
+ *   Average Case: O(n log n) - Random data
+ *   Worst Case:   O(n^2)     - Already sorted (poor pivot choice)
+ * Space Complexity: O(log n) - Recursive call stack
+ *
+ * Properties:
+ *   - Not stable (relative order of equal elements may change)
+ *   - In-place (no extra arrays needed)
+ *   - Divide and conquer algorithm
+ *   - Fastest general-purpose sort in practice
+ *
+ * ================================================================================================
  */
 
 public class QuickSort {
