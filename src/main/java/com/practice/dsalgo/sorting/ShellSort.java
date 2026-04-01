@@ -13,7 +13,7 @@ package com.practice.dsalgo.sorting;
  *
  * The key idea is that by starting with large gaps, elements can move toward their
  * correct position faster than in regular Insertion Sort. The gap sequence used here
- * is n/2, n/4, n/8, ..., 1 (Knuth's original sequence).
+ * is n/2, n/4, n/8, ..., 1 (Shell's original sequence).
  *
  * ================================================================================================
  * GRAPHICAL REPRESENTATION - Shell Sort
